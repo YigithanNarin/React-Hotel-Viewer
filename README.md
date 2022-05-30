@@ -17,9 +17,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 
 Project Dependencies:
-    "@mui/icons-material": "^5.8.0",
-    "@mui/material": "^5.8.1",
+
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1"
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    
