@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sorting {
+  position: relative;
+  width: 197px;
+  margin: 20px 0 10px 0;
+}
+
+.sorting::before {
+  position: absolute;
+  left: 7px;
+  top: 9px;
+  content: '\21C5';
+}
+
+.sorting select {
+  width: 100%;
+  padding: 14px 30px;
+  box-shadow: 1px 1px 4px 1px lightgrey;
+  border-radius: 8px;
+  border: 0;
+  background-color: #ffffff;
+  appearance: none;
+}
+
+.sorting .sorting__icon {
+  position: absolute;
+  right: 12px;
+  top: 5px;
+}
+
+.add-hotel {
+  display: inline-flex;
+}
+
+.add-hotel .add-hotel__button {
+  border-radius: 5px;
+  background-color: white;
+  border-color: #5e9ffd;
+  color: #0072c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  width: 42px;
+}
+
+.add-hotel .add-hotel__title {
+  margin: 4px 0 0 13px;
+  font-size: 24px;
+}
+
+.hotel-list {
+  margin-top: 10px;
+  width: min-content;
+}
+
+.hotel-list .hotel-list__card{
+  background-color: white;
+  border-radius: 5px;
+  width: 269px;
+  height:88px;
+  display: inline-flex;
+  margin: 0 0 10px 0;
+  padding:6px;
+  box-shadow:1px 1px 4px 1px lightgrey;
+}
+
+.delete-item{
+  opacity: 0;
+  height: 0;
+  width: 0;
+  margin-left: -14px;
+  margin-top: -10px;
+}
+
+.delete-item__icon{
+  color: red;
+}
+
+.delete-item:hover{
+  opacity: 1;
+}
+
+.hotel-list__card:hover{
+  background-color: #e5e5e5;
+}
+
+.hotel-list__card:hover + .delete-item{
+  opacity: 1;
+}
+
+.hotel-list .hotel-list__card .hotel-list__media{
+  border-radius: 5px;
+  height:88px;
+  width:93px;
+}
+
+.hotel-list .hotel-list__card .hotel-list__card-content{
+  padding:0 0 0 10px;
+}
+
+.hotel-list .hotel-list__card .hotel-list__card-content .hotel-list__hotel-name{
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+}
+
+.hotel-list .hotel-list__card .hotel-list__card-content .hotel-list__hotel-div{
+  height: 19px;
+  background-color: #f6f9fd;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.hotel-list .hotel-list__card .hotel-list__card-content .hotel-list__hotel-score{
+  padding: 0;
+  margin: 0 0 0 7px;
+  font-size: 12px;
+  font-family: Verdana, sans-serif;
+  color: #11c6ca;
+}
+
+.hotel-list .hotel-list__card .hotel-list__card-actions {
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: white;
+  border-color: #69a6fd;
+  color: #69a6fd;
+  height: 29px;
+  width: 78px;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.popup-div{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.popup-div .popup-div__button1{
+  margin: 10px;
+  padding: 9px;
+  min-width: 70px;
+  width: 40%;
+  border-color: #076afd;
+  border-radius: 8px;
+  background-color: #076afd;
+  color: white;
+}
+
+.popup-div .popup-div__button2{
+  margin: 10px;
+  padding: 9px;
+  min-width: 70px;
+  width: 40%;
+  border-color: #076afd;
+  color: #076afd;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.paginationNav{
+  text-align: center;
+  margin-top: 8px;
+}
+
+.paginationUl{
+  padding: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.paginationUl .paginationUl__a{
+  float: left;
+  padding: 0 8px;
+  line-height: 30px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  font-weight: bold;
+}
